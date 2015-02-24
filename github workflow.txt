@@ -1,0 +1,42 @@
+
+github flow
+
+Nick and I are figuring out how to best collaborate using Github. Because it's NOT apparent and simple, here's our suggestion to help you all save time.
+
+    Have someone establish a repository for your project. This person is an owner. There is only one owner.
+        include the dataset and all the files you'll need for your project.
+    Have the owner establish you as a "collaborator." 
+        In RStudio, the collaborator should start a "new project" using "version control" -> "Git" (as we learned in class)
+        Use the html link that appears on the owner's repository page (i.e. your shared repo). 
+    Use the "shared repository" method for workflow.
+        Before working, check with your partner if they are working on the file.
+            Make sure your partner is not working on the file and that the file has been "committed" and "pushed" to the repository on Github.
+        To start working, first "pull."
+            this pulls Github's copy to your computer. In other words, do this to make sure all your files are up-to-date.
+        Do your work; make your changes.
+        "Commit" & include a comment regarding your changes.
+        "push"
+            this pushes your copy to Github. In other words, do this to make sure your changes are made available to your partner.
+        Lastly, communicate with your partner that you're done working with the file for the moment so they know that they could be working on it now.
+
+
+Note:
+
+    caution: sharing a repository means that you susceptible to conflicting "merges"
+        merge conflict : when people simultaneously "commit" different changes to the same code
+            You'll have to communicate with each other to resolve your merge conflicts. Thankfully a merge conflict doesn't mean all your work will be lost (because you commit before pushing). It only means a bit of confusion when trying to sort what the working file should be—you'll have to clean-up and organize each other's work when merging. 
+                metaphor: you and your partner each have a handful of cards while playing poker. Your partner gives you their handful of cards, now you need keep/remove some cards to make the best hand moving forward in the game.
+        Despite the possibility conflicts, a benefit to the "shared repo" method is that:
+            avoids redundant work
+            doesn't require someone to manage the project; an unfair distribution of responsibility.
+    fork/pull method means that the owner has to manage the workflow
+        owner will have to review "pull requests" (i.e. changes)
+            confusing: "pull request" are like "push" in the fork/pull method. 
+        because a fork is simply a copy, it doesn't update automatically with changes from the owner.
+            it's possible to "sync upstream" which means that your fork copy syncs with changes from the owner, but this means the owner has to make sure to review your "pull requests" so that their copy includes any of the code you worked on.
+                without accepting pull requests, you're susceptible (I think; not verified) to accidentally loosing the changes you've previously made + you might be working on something that is redundant.
+        read github flow (matt mentioned earlier) if you want a basic understanding of the fork/pull method
+            you'll probably have to completely understand the fork/pull method if you work in a large group, i.e. at a corporate job with a project manager.
+            we use the fork/pull method in class for our homework. If you want to know why, read the above link.
+            you probably should use the fork/pull method when you share your data with another group in class.  
+    disclosure : there are many external tools to help manage the complexity with the fork/pull method, but I haven't reviewed them myself. Also, please feel free to update this to make it more lucid or correct. 
